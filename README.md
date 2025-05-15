@@ -49,6 +49,7 @@ cp .env.example .env
 Then update the following variables:
 
 ```
+PORT=set_the_port_of_server
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 MONGODB_URI=your_mongodb_connection_string
 COHERE_API_KEY=your_cohere_api_key

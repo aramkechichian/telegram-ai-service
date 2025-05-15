@@ -28,7 +28,7 @@ A NestJS microservice that receives messages from Telegram via webhook, stores t
 ### 1. Clone the project
 
 ```bash
-git clone https://github.com/your-username/telegram-ai-service.git
+git clone https://github.com/aramkechichian/telegram-ai-service.git
 cd telegram-ai-service
 ```
 

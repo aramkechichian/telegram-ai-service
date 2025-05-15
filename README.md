@@ -67,7 +67,7 @@ The server will run on `http://localhost:3000`.
 
 ## 🌐 Webhook Setup
 
-### Expose your server with `ngrok`:
+### Local Development with `ngrok`:
 
 ```bash
 ngrok http 3000
@@ -78,6 +78,18 @@ ngrok http 3000
 ```bash
 curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook" \
      -d "url=https://<YOUR_NGROK_URL>/webhook"
+```
+
+Now Telegram will forward messages to your `/webhook` endpoint.
+
+### Production Development with `with Vercel or any HTTPS domain`:
+
+
+### Register your Telegram webhook:
+
+```bash
+curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook" \
+     -d "url=https://<YOUR_DOMAIN_URL>/webhook"
 ```
 
 Now Telegram will forward messages to your `/webhook` endpoint.

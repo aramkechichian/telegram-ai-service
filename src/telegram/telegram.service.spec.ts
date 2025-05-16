@@ -1,4 +1,3 @@
-// test/unit/telegram.service.spec.ts
 
 import { Test, TestingModule } from '@nestjs/testing';
 import { getModelToken } from '@nestjs/mongoose';

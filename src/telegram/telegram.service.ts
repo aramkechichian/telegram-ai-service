@@ -43,7 +43,7 @@ export class TelegramService {
     this.logger.log(`Message with AI response saved.`);
   }
 
-  @Cron('*/5 * * * * *') // cada 5 segundos
+  @Cron('*/5 * * * * *')
   async handleCron() {
     const sentCount = await this.sendPendingResponses();
     if (sentCount > 0) {
